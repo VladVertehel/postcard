@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/giftbox.png" type="image/x-icon">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <audio autoplay loop id="player">
+        <source src="audio/Dusty Rhymes - Freedom Trail Studio.mp3">
+    </audio>
+
+    <button class="btn music" id="button">
+        <img src="ico/music_note_black_24dp.svg" alt="note" width="30px" id="music">
+    </button>
+
+    <button id="back" class="btn">
+        <img src="ico/arrow_back_ios_black_24dp.svg" alt="back" height="60%" width="60%">
+    </button>
+
+    <div id="book" class="book">
+
+        <!-- Sheet 1 -->
+        <div id="sheet1" class="sheet">
+            <div class="front">
+                <div id="front1" class="front-content">
+                    <img src="img/giftbox.png" alt="giftbox" width="50%">
+                </div>
+            </div>
+            <div class="back">
+                <div id="back1" class="back-content"
+                    style="display: flex; flex-direction: column; text-align: center; padding: 20px;">
+                    <h1>Lorem ipsum</h1><br>
+                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet cum, delectus modi officia<br>
+                        :>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sheet 2 -->
+        <div id="sheet2" class="sheet">
+            <div class="front">
+                <div id="front2" class="front-content"
+                    style="display: flex; flex-direction: column; text-align: center; padding: 20px;">
+                    <h1>Lorem</h1><br>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ex quas nemo! Fugiat laboriosam rem temporibus nostrum consequatur explicabo reiciendis fuga minima culpa laborum, similique eveniet tempore ad. Ut, reprehenderit!</h2> <br>
+                    <img src="ico/favorite_border_black_24dp.svg" alt="heart" style="transform: scale(2);">
+                </div>
+            </div>
+            <div class="back">
+                <div id="back2" class="back-content"
+                    style="display: flex; flex-direction: column; justify-content: flex-start; padding-top: 20px;">
+                    <img src="img/100dollar.png" alt="100dollar" class="money unvisible">
+                    <div class="attachment"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sheet 3 -->
+        <div id="sheet3" class="sheet">
+            <div class="front">
+                <div id="front3" class="front-content">
+                    <div class="buy unvisible">Lorem ipsum dolor, sit amet</div>
+                </div>
+            </div>
+            <div class="back">
+                <div id="back3" class="back-content" style="display: flex; flex-direction: column;">
+                    <img src="img/smiley.png" alt="smiley" height="50px" class="smiley unvisible">
+                    <img src="img/demon.png" alt="demon" height="50px" class="demon unvisible">
+                    <img src="img/triple-click.png" alt="triple-click" height="50px" class="tripleclick unvisible">
+                    <img src="img/double-click.png" alt="double-click" height="50px" class="doubleclick unvisible">
+                    <img src="img/five-click.png" alt="five-click" height="50px" class="fiveclick unvisible">
+
+                    <img src=" img/fire.gif" alt="fire" width="80px" class="fire3 unvisible">
+                    <img src=" img/fire.gif" alt="fire" width="80px" class="fire4 unvisible">
+                    <img src=" img/fire.gif" alt="fire" width="80px" class="fire1 unvisible">
+                    <img src=" img/fire.gif" alt="fire" width="80px" class="fire2 unvisible">
+                    <img src=" img/fire.gif" alt="fire" width="80px" class="fire unvisible">
+
+                    <img src="img/cake.png" alt="cake" width="350px" class="cake unvisible">
+                    <div style="display: flex; flex-direction: row;">
+                        <h1>PRESS CAKE</h1> <img src="ico/hand.jpg" alt="hand" width="50px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sheet 4 -->
+        <div id="sheet4" class="sheet">
+            <div class="front">
+                <div id="front4" class="front-content" style="display: flex; flex-direction: column;">
+                    <h1 id="score" style="margin-bottom: 50px;"></h1><br>
+                    <img src="img/cup.png" alt="cup" height="400px" class="cup unvisible">
+                    <h2 class="store-name">Магазин</h2><br>
+                    <div class="store">
+                        <div style="margin: 10px;">
+                            <div style="display: flex; justify-content: center;" id="double-click">
+                                <img src="img/double-click.png" alt="double-click" height="50px">
+                                <h2 style="align-self: center; margin-left: 10px;">50</h2>
+                            </div>
+                            <div style="display: none; justify-content: center;" id="triple-click">
+                                <img src="img/triple-click.png" alt="triple-click" height="50px">
+                                <h2 style="align-self: center; margin-left: 10px;">150</h2>
+                            </div>
+                            <div style="display: none; justify-content: center;" id="five-click">
+                                <img src="img/five-click.png" alt="five-click" height="50px">
+                                <h2 style="align-self: center; margin-left: 10px;">1050</h2>
+                            </div>
+                        </div>
+
+                        <div style="margin: 10px;">
+                            <div style="display: flex; justify-content: center;" id="smiley">
+                                <img src="img/smiley.png" alt="smiley" height="50px">
+                                <h2 style="align-self: center; margin-left: 10px;">150</h2>
+                            </div>
+                            <div style="display: none; justify-content: center;" id="demon">
+                                <img src="img/demon.png" alt="demon" height="50px">
+                                <h2 style="align-self: center; margin-left: 10px;">1500</h2>
+                            </div>
+                        </div>
+
+
+                        <div style="display: flex; justify-content: center; margin: 10px;" id="cup">
+                            <img src="img/cup.png" alt="cup" height="50px">
+                            <h2 style="align-self: center; margin-left: 10px;">5000</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="back">
+                <div id="back4" class="back-content">
+                    <h1><a href="photos.html"
+                            style="text-decoration: none; color: black; display: flex; justify-content: center; align-items: center;"
+                            target="_blank">тик<img src="img/click.png" alt="hand" height="25px"
+                                style="margin-left: 10px;"></a></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sheet 5 -->
+        <div id="sheet5" class="sheet">
+            <div class="front">
+                <div id="front5" class="front-content" style="display: flex; flex-direction: column;">
+                    <audio controls>
+                        <source src="audio/08-03 result.ogg">
+                    </audio>
+                    <audio controls>
+                        <source src="audio/09-03 result.ogg">
+                    </audio>
+                    <audio controls>
+                        <source src="audio/10-03 result.ogg">
+                    </audio>
+                    <audio controls>
+                        <source src="audio/11-03 result.ogg">
+                    </audio>
+                </div>
+            </div>
+            <div class="back">
+                <div id="back5" class="back-content">
+                    <img src="img/happybirthday.png" alt="happybirthday" class="happybirthday unvisible">
+                    <img class="sign unvisible">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="forward" class="btn">
+        <img src="ico/arrow_forward_ios_black_24dp.svg" alt="forward" height="60%" width="60%">
+    </button>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

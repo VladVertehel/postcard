@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(150deg, #CDB4DB 60%, #FFC8DD);
+    overflow: hidden;
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    
+    cursor: pointer;
+    margin: 20px;
+    transition: 0.1s;
+
+    user-select: none;
+}
+.btn:hover{
+    transition: 0.1s;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.book{
+    position: relative;
+    height: 80vh;
+    width: 40vw;
+    transition: transform 0.5s;
+}
+.sheet{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.front, .back{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: rgba(168, 168, 168, 0.5) 1px solid;
+}
+.back{
+    z-index: 0;
+    border-left: rgba(168, 168, 168, 0.5) 1px solid;
+}
+.front-content, .back-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sheet1{
+    z-index: 10;
+}
+#sheet2{
+    z-index: 9;
+}
+#sheet3{
+    z-index: 8;
+}
+#sheet4{
+    z-index: 7;
+}
+#sheet5{
+    z-index: 6;
+}
+
+.flipped .front, .flipped .back{
+    transform: rotateY(-180deg);
+}
+.back-content{
+    transform: rotateY(180deg);
+}
+
+img{
+    user-select: none;
+}
+.happybirthday{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 350px;
+    height: auto;
+    transform: rotateZ(-15deg);
+
+}
+.sign{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 350px;
+    height: auto;
+    transform: rotateZ(10deg);
+}
+.attachment{
+    z-index: 1;
+    height: 0;
+    width: 350px;
+    border-top: 10px black solid;
+    border-radius: 1rem;
+}
+.unvisible{
+    display: none;
+}
+.money{
+    z-index: 0;
+    width: 350px;
+    height: auto;
+    transform: rotateZ(90deg);
+}
+.cake{
+    margin-top: -90px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    z-index: 0;
+    cursor: pointer;
+}
+.fire{
+    z-index: 1;
+}
+.music{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#front5 audio{
+    margin-bottom: 10px;
+}
+.store{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.fire1{
+    z-index: 1;
+    margin-top: 7px;
+    margin-bottom: -155px;
+    margin-left: -130px;
+}
+.fire2{
+    z-index: 1;
+    margin-top: 7px;
+    margin-bottom: -155px;
+    margin-left: 130px;
+}
+.fire3{
+    z-index: 1;
+    margin-top: 143px;
+    margin-bottom: -150px;
+    margin-left: 330px;
+}
+.fire4{
+    z-index: 1;
+    margin-bottom: -290px;
+    margin-left: -330px;
+}
+.smiley, .demon{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.demon{
+    left: 25%;
+}
+.doubleclick, .tripleclick, .fiveclick{
+    position: absolute;
+    top: 15%;
+    right: 15%;
+}
+
+@media (min-width: 1440px){
+    .book{
+        width: 30vw;
+    }
+    .sign{
+        width: 300px;
+    }
+}
+@media (min-height: 800px){
+    .money{
+        width: 500px;
+    }
+}
